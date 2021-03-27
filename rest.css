@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+.container{
+    width:100%;
+    height:100vh;
+    top: 50%;
+    background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url(https://th.bing.com/th/id/R029acbfcbc456909943d129a12e0fb96?rik=gZ1Ed2CrKnAgDg&riu=http%3a%2f%2fsciencelinkcafe.com%2fimages%2frain_drops_on_banana_leaf.jpg&ehk=3B3KxiUFTkT53ULbWg2rJNJAZRsGclJEicLG7HLkjMo%3d&risl=&pid=ImgRaw);
+    background-size: cover;
+    background-position:center;
+
+}
+.navi{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.symb{
+    width: 100px;
+    cursor: pointer;
+}
+.navi ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navi ul li a{
+    text-decoration: none ;
+    color: rgb(253, 253, 4);
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgb(241, 7, 7), 0 2px 0 rgb(248, 5, 5),
+                     0 20px 30px rgba(0, 0, 0, 0.5);
+    font-family: ranchers;                     
+}
+.navi ul li a::after{
+    content: ' ';
+    height: 3px;
+    width: 0 ;
+    background:rgb(230, 12, 12);
+    position: absolute;
+    left: 0%;
+    bottom: -7px;
+    transition: 0.5s;
+}
+.navi ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    width: 80;
+    position: absolute;
+    top: 20%;
+    transform: translateX(50%);
+    text-align: center;
+    
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+    font-family:New Tegomin;
+    color: rgb(253, 253, 2);
+    text-shadow: 0 1px 0 rgb(241, 7, 7), 0 2px 0 rgb(248, 5, 5),
+                 0 3px 0 rgb(248, 5, 5), 0 4px 0 rgb(248, 5, 5),
+                 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-style:italic;
+    color: rgb(250, 250, 249);
+    text-shadow: 0 1px 0 rgb(241, 7, 7), 0 2px 0 rgb(248, 5, 5),
+                 0 20px 30px rgba(0, 0, 0, 0.5);
+
+
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight:bold ;
+    border: 2px solid rgb(253, 249, 3);
+    background: transparent;
+    color: rgb(230, 255, 5);
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    
+    
+}
+span{
+    background:rgb(196, 19, 19);
+    height: 100%;
+    width: 0%;
+    border-radius: 75px;
+    position:absolute;
+    left: 0;
+    right: 35;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button :hover{
+    border:rgb(48, 115, 160);
+}
+button a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    font-family: josefin-san;
+    text-shadow: 0 1px 0 rgb(253, 228, 2), 0 2px 0 rgb(248, 232, 5),
+                     0 20px 30px rgba(0, 0, 0, 0.5);
+}
+hr{
+    box-shadow: 0 1px 0 rgb(33, 253, 4), 0 2px 0 rgb(62, 248, 5),
+    ,0 2px 0 rgb(62, 248, 5),0 2px 0 rgb(62, 248, 5),0 20px 30px rgba(0, 0, 0, 0.5);
+}
